@@ -1,4 +1,1 @@
 .venv
-*.toml
-pyproject.toml
-*.cfg
