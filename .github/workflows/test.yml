@@ -9,13 +9,15 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Check Actions
-              uses: actions/checkou@v4
+              uses: actions/checkout@v4
 
             - name: Hello Dev
               run: |
                 echo ola mundo
+                ls -al
     
     second-job:
+        needs: first-job
         runs-on: ubuntu-latest
         steps:
             - name: Check Actions
